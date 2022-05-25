@@ -20,6 +20,6 @@ jobs:
       - name: Build Table
         run: python scrapper.py
       - name: Commit changes
-      - uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: update README
