@@ -1,0 +1,10 @@
+name: Update Table
+
+on: [push]
+
+jobs:
+  run-scrapper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check python
+        run: which python

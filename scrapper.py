@@ -35,8 +35,8 @@ for url in urls:
     dods.append(dod)
 
 data = {
-    "title":titles,
-    "due_date":due_dates,
+    "titulo":titles,
+    "deadline":due_dates,
     'progress':progs,
     'objetivo': objetivos,
     'dod':dods
@@ -44,7 +44,9 @@ data = {
 
 df=pd.DataFrame(data)
 
-text=f'# Milestones\n\n\n{df.to_markdown(index=False)}'
+df.sort_values('progress', ascending=False, inplace=True)
+
+text=f'# Milestones Infra\n\n\n{df.to_markdown(index=False)}'
 
 
 with open('README.md', 'w') as f:
