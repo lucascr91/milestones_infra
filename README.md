@@ -1,7 +1,7 @@
 # Milestones Infra
 
 
-| titulo                                                                       | deadline        | progress   |
+| milestone                                                                    | deadline        | progress   |
 |:-----------------------------------------------------------------------------|:----------------|:-----------|
 | Automatização de postagens e monitoramento de métricas                       | August 10, 2022 | 71%        |
 | Transferência de know-how de implementação de pipelines para equipe de dados | August 10, 2022 | 44%        |
