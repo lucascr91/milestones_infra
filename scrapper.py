@@ -32,7 +32,7 @@ for url in urls:
     progs.append(progress)
 
 data = {
-    "titulo":titles,
+    "milestone":titles,
     "deadline":due_dates,
     'progress':progs
 }
