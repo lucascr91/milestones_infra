@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: ctions/checkout@v2
+        uses: actions/checkout@v2
       - name: Install python 3.9
         uses: actions/setup-python@v3
         with:
