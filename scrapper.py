@@ -6,7 +6,8 @@ import pandas as pd
 
 urls =['https://github.com/basedosdados/pipelines/milestone/1',
 'https://github.com/basedosdados/pipelines/milestone/2',
-'https://github.com/basedosdados/website/milestone/2'
+'https://github.com/basedosdados/website/milestone/2',
+'https://github.com/basedosdados/pipelines/milestone/3'
 ]
 
 titles=[]
