@@ -26,21 +26,15 @@ for url in urls:
     title = re.match(r'.*(?=Due)', raw).group().strip()
     due_date=re.findall(r'[A-Z][a-z]+\s+\d{1,2},\s+\d{4}', raw)[0].strip()
     progress=re.findall(r'\d+%', raw)[0].strip()
-    objetivo=re.findall(r'(?=Objetivo).*(?=DOD)', raw)[0].split('Objetivo:')[1].strip()
-    dod=re.findall(r'(?=DOD:).*', raw)[0].split('DOD:')[1].strip()
 
     titles.append(title)
     due_dates.append(due_date)
     progs.append(progress)
-    objetivos.append(objetivo)
-    dods.append(dod)
 
 data = {
     "titulo":titles,
     "deadline":due_dates,
-    'progress':progs,
-    'objetivo': objetivos,
-    'dod':dods
+    'progress':progs
 }
 
 df=pd.DataFrame(data)
