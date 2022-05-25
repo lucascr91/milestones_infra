@@ -46,6 +46,8 @@ df=pd.DataFrame(data)
 
 df.sort_values('progress', ascending=False, inplace=True)
 
+print(df)
+
 text=f'# Milestones Infra\n\n\n{df.to_markdown(index=False)}'
 
 

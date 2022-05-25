@@ -6,5 +6,15 @@ jobs:
   run-scrapper:
     runs-on: ubuntu-latest
     steps:
-      - name: check python
-        run: which python
+      - name: Checkout Repo
+      - uses: ctions/checkout@v2
+      - name: Install python 3.9
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+      - run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Build Table
+      - run: python scrapper.py
